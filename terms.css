@@ -1,0 +1,35 @@
+body{
+    background-image:url("https://cdn.pixabay.com/photo/2016/11/18/14/05/brick-wall-1834784_640.jpg");
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    }
+    
+    .box {
+    width: 70%;
+    margin: auto;
+    border: 2px solid black;
+    padding: 20px;
+    margin-top:80px;
+    background:rgb(245, 209, 209);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;}
+      
+    h1 {text-align: center;}
+      
+    p { text-align: justify;}
+      
+    button {
+    display: block;
+    margin: auto;
+    text-align:end;}
+    
+    button a{text-decoration: none;}
+    
+    button:hover{
+        background-color:gray;
+    }
+    button a:hover{color:white;}

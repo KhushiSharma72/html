@@ -1,0 +1,123 @@
+body {
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5yzs6QnQCwNdXJV4h2KcVPjmNCK6ppPE5QQ&usqp=CAU");
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+    margin: 100px auto;
+    border: 1px solid #2b2a2a;
+    padding: 20px;
+    background: rgb(233, 212, 215);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: #000;
+}
+
+h3 {
+    color: #000;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"], input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    background-color: #5b5959bd;
+    color: aliceblue;
+    border-radius: 7px;
+}
+
+::placeholder{
+    color:aliceblue;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+fieldset {
+    border: 1px solid #333232;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center; /* Center the stars */
+}
+
+.star {
+    cursor: pointer;
+    font-size: 35px;
+    margin-right: 5px;
+    color: rgba(0, 0, 0, 0.64);
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: rgb(248, 179, 5);
+    border: 1px #dfac3e
+}
+
+#rating {
+    display: none;
+}
+
+.message {
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #121216a5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align:center;
+    margin-bottom: 30px;
+}
+
+.button:hover {
+    background-color: grey;
+}
+
+hr{
+    background-color:#000;
+    width: 85%;
+    text-align: center;
+    border:1px solid #2b2a2a;
+}

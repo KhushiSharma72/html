@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div class="container">
+        <h1>" THE LITTLE KITCHEN "</h1>
+        <h3>Kindly fill the feedback form below.</h3>
+        <hr>
+        <br>
+    <form action="#" method="post" id="feedbackForm">
+        <label for="name"><b>Name:</b></label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name.">
+
+        <form action="#" method="post" id="feedbackForm">
+            <label for="email"><b>Enter your email:</b></label>
+            <input type="email" id="name" name="email" required placeholder="example: user@gmail.com">
+
+        <fieldset>
+            <legend>How satisfied are you with our service?</legend>
+            <div class="stars" onclick="handleStarRating(event)">
+                <span class="star" data-value="5">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="1">&#9733;</span>
+            </div>
+            <input type="hidden" id="rating" name="rating">
+        </fieldset>
+
+        
+
+        <fieldset>
+            <legend>How likely are you to recommend us to others?</legend>
+            <label><input type="radio" name="recommendation" value="very-likely"> Very Likely</label>
+            <label><input type="radio" name="recommendation" value="likely"> Likely</label>
+            <label><input type="radio" name="recommendation" value="neutral"> Neutral</label>
+            <label><input type="radio" name="recommendation" value="unlikely"> Unlikely</label>
+            <label><input type="radio" name="recommendation" value="very-unlikely"> Very Unlikely</label>
+        </fieldset>
+
+        <label for="suggestions"><b>Any additional comments or suggestions:</b></label>
+        <textarea id="suggestions" name="suggestions" rows="4" placeholder="Any suggestions..."></textarea>
+
+        <button class="button" type="submit">Submit Feedback</button>
+    </form>
+
+    <script>
+        function handleStarRating(event) {
+            const stars = document.querySelectorAll('.star');
+            const ratingInput = document.getElementById('rating');
+            const selectedStar = event.target;
+
+            stars.forEach(star => star.style.color = 'black'); // Reset all stars to black
+            selectedStar.style.color = 'orange'; // Highlight selected star
+
+            const selectedValue = selectedStar.dataset.value;
+            ratingInput.value = selectedValue; // Set the rating value
+
+            // Light up stars until the selected one
+            stars.forEach(star => {
+                if (star.dataset.value <= selectedValue) {
+                    star.style.color = 'orange';
+                }
+            });
+        }
+    </script>
+    <div id="message" class="message">Kindly fill this feedback form <br>and provide suggestions for features needed to be improved...</div>
+</div>
+</body>
+</html>

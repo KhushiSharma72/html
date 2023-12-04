@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('food2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 58px;
+    color:rgb(255, 255, 255);
+    margin-left: -20px;
+}
+
+h2{
+    margin-left: -20px;
+    color:#fff
+}
+h3{
+    color:#fff
+}
+
+ul {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+.menu-bar {
+    /* background: rgb(145, 207, 236);  */
+    text-align: right;
+    cursor: pointer;
+    
+}
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    width: 75%;
+    text-align: center;
+}
+.menu-bar ul li {
+    width: 100%;
+    margin: 15px;
+    padding: 15px;
+    padding-left: 15px;
+    position: relative;
+    bottom:  0px;
+    transition: NONE;
+}
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.menu-bar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: gray;
+    position: absolute;
+    left:  0;
+    right: 1;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.menu-bar ul li:hover::after {
+    width: 100%;
+}
+.welcome {
+    padding-top: 50px;
+    padding-left: 50px;    
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+.logo {
+    width: 160px;
+    cursor: pointer;
+    margin-top: -40px;
+    margin-left: 30px;
+}
+button {
+    width: 10%;
+    padding: 12px;
+    text-align: center;
+    margin: 20px 20px;
+    margin-left: -20px;
+    margin-right: 50px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(255, 255, 255);
+    background: transparent; 
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span {
+    background: white;
+    height: 100px;
+    width: 0px;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    /* transition: 0.5s; */
+}
+button:hover span {
+    width: 100%;
+}
+button:hover {
+    border: none;
+    color: black;
+    transform-style: preserve-3d;
+}
+.active, .menu-bar ul li:hover {
+    background: none;
+    border-radius: 3px;
+}
+
+
+.button_link button a {text-decoration: none;
+    color: #656565;
+    text-transform: uppercase;}
+
